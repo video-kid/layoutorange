@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,600|Playfair+Display&subset=latin-ext');
+/*
+fonts:
+font-family: 'Playfair Display', serif;
+font-family: 'Dosis', sans-serif;
+
+colors:
+#242c28 dark slate grey
+#625f5d dim gray (medium)
+#aca8a5 dark grey (light)
+#080808 black
+#9a4609 brown
+#cf6e0f dark orange
+#e38016 lighter orange
+#D43C1B red orange
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #dadada;
+    font-family: 'Dosis', sans-serif;
+    background-color: #242c28;
+}
+
+/*header*/
+
+header {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-image: url(img/bg.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.darker {
+    background-color: rgba(56, 48, 39, 0.5);
+    height: 100%;
+}
+
+header div.hello {
+    background-color: #242c28;
+    min-width: 170px;
+    min-height: 170px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0px 6px 1px #080808;
+
+}
+
+header div.hello:before {
+    content: "";
+    margin-left: 5%;
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    border-bottom: 1px solid #cf6e0f;
+    bottom: 50%;
+}
+
+header div.hello>span {
+    line-height: 100px;
+}
+
+header div.hello>span>* {
+    text-align: center;
+}
+
+header div.hello>span>h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+}
+
+header div.hello>span>h3 {
+    line-height: 100%;
+    font-size: 18px;
+    font-weight: 200;
+}
