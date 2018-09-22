@@ -27,6 +27,12 @@ body {
     background-color: #242c28;
 }
 
+a {
+    text-decoration: none;
+    color: #dadada;
+}
+
+/*end of globas*/
 /*header*/
 
 header {
@@ -41,6 +47,24 @@ header {
 .darker {
     background-color: rgba(56, 48, 39, 0.5);
     height: 100%;
+}
+
+header nav {
+    text-align: center;
+}
+
+header nav>a {
+    display: inline-block;
+    padding: 6px 10px 0;
+    margin: 4px 8px;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+nav>a:hover {
+    border-bottom: 1px solid #cf6e0f;
 }
 
 header div.hello {
@@ -83,4 +107,16 @@ header div.hello>span>h3 {
     line-height: 100%;
     font-size: 18px;
     font-weight: 200;
+}
+
+header .arrow {
+    width: 100%;
+    bottom: 4%;
+    position: absolute;
+    text-align: center;
+    font-size: 40px;
+}
+
+header .arrow>a {
+    width: 40px;
 }
