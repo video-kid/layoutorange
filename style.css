@@ -111,7 +111,6 @@ header div.hello>span>h3 {
 
 header .arrow {
     width: 100%;
-    bottom: 4%;
     font-size: 40px;
     text-align: center;
 }
@@ -120,11 +119,12 @@ header .arrow>a {
     display: inline-block;
     position: absolute;
     bottom: 4%;
+    transform: translate(-50%);
 }
 
 /*header width 600+*/
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (orientation: portrait) {
 
     .darker {}
 
