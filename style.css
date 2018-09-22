@@ -25,6 +25,7 @@ body {
     color: #dadada;
     font-family: 'Dosis', sans-serif;
     background-color: #242c28;
+    overflow-x: hidden;
 }
 
 a {
@@ -34,6 +35,11 @@ a {
 
 section {
     height: 100vh;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
 }
 
 /*end of globas*/
@@ -239,3 +245,153 @@ main {
 }
 
 /*technologies section*/
+
+.technologies {}
+
+/*end of technologies section*/
+/*photo gallery section*/
+.flexGallery {}
+
+/*end of photo gallery section*/
+
+/*footer*/
+footer {
+    width: 100vw;
+    background-color: #625f5d;
+    border-top: 2px dashed #242c28;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+footer>div.footerContainer {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+footer>div.footerContainer * {
+    padding: 10px;
+}
+
+footer>div.footerContainer h4 {
+    font-size: 20px;
+    border-bottom: 1px solid #cf6e0f;
+}
+
+footer>div.footerContainer>.contact p {
+    text-align: left;
+    font-size: 18px;
+}
+
+footer>div.footerContainer>.socials .icons {
+    text-align: center;
+}
+
+footer>div.footerContainer>.socials .icons i {
+    padding: 5px;
+    font-size: 40px;
+}
+
+footer>div.footerContainer>.socials .icons i:hover {
+    color: #e38016;
+}
+
+footer>div.copyright {
+    background-color: #e38016;
+    color: #080808;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+footer>div.copyright>p {
+    line-height: 30px;
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+
+
+    footer>div.footerContainer {
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+    footer>div.footerContainer>.socials {
+        text-align: right;
+    }
+
+    footer>div.footerContainer>.socials .icons {
+        text-align: right;
+    }
+}
+
+@media (min-width: 1000px) {
+    footer>div.footerContainer {
+        width: 90vw;
+        height: 50vh;
+        padding-left: 3vh;
+        padding-right: 3vh;
+        padding-top: 5%;
+    }
+
+    footer>div.footerContainer .contact {
+        width: 42vw;
+        text-align: left;
+        float: left;
+    }
+
+    footer>div.footerContainer .socials {
+        width: 42vw;
+        float: right;
+    }
+
+    footer>div.footerContainer .contact p {
+        font-size: 25px;
+    }
+
+
+    footer>div.footerContainer h4 {
+        font-size: 30px;
+    }
+
+    footer>div.footerContainer>.socials .icons {
+        text-align: right;
+    }
+
+    footer>div.footerContainer>.socials .icons i {
+        font-size: 60px;
+    }
+}
+
+@media (min-width: 1100px) {
+
+    footer>div.copyright>p {
+        line-height: 70px;
+        font-size: 20px;
+    }
+
+    footer>div.footerContainer .contact p {
+        font-size: 30px;
+    }
+
+
+    footer>div.footerContainer h4 {
+        font-size: 45px;
+    }
+
+    footer>div.footerContainer {
+        padding-top: 1%;
+        padding-bottom: 45px;
+    }
+}
+
+@media (min-width: 1400px) {
+    footer>div.footerContainer h4 {
+        font-size: 55px;
+        margin-bottom: 10px;
+    }
+
+    footer>div.footerContainer {
+        padding-top: 5%;
+    }
+}
