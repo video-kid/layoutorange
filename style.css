@@ -46,7 +46,7 @@ header {
 .layer {
     background-color: rgba(56, 48, 39, 0.5);
     height: 100%;
-    padding: 10%;
+    padding: 5%;
     position: relative;
 }
 
@@ -112,22 +112,73 @@ header div.hello>span>h3 {
 
 header .arrow {
     width: 100%;
-    font-size: 40px;
     text-align: center;
 }
 
 header .arrow>a {
     display: inline-block;
     position: absolute;
+    font-size: 60px;
     bottom: 5%;
     transform: translate(-50%);
 }
 
-/*header width 600+*/
+/*header width 600+ and vertical*/
 
 @media (min-width: 600px) and (orientation: portrait) {
 
-    .layer {}
+    .layer {
+        padding: 10%;
+    }
+
+    header nav>a {
+        padding: 8px 10px 0;
+        margin: 8px 6%;
+        font-size: 20px;
+        font-size: 30px;
+    }
+
+    header div.hello {
+        background-color: #242c28;
+        min-width: 300px;
+        min-height: 300px;
+    }
+
+    header div.hello>span {
+        line-height: 190px;
+    }
+
+    header div.hello>span>h1 {
+        font-size: 60px;
+    }
+
+    header div.hello>span>h1:after {
+        content: "!";
+    }
+
+    header div.hello>span>h3 {
+        font-size: 30px;
+    }
+
+    header .arrow>a {
+        bottom: 10%;
+        font-size: 80px;
+    }
+}
+
+/*hader width 900+ and horizontal*/
+
+@media (min-width: 900px) and (orientation: landscape) {
+    .layer {
+        padding: 5%;
+    }
+
+    header nav>a {
+        padding: 8px 10px 0;
+        margin: 8px 10%;
+        font-size: 20px;
+        font-size: 30px;
+    }
 
     header div.hello {
         background-color: #242c28;
@@ -138,4 +189,22 @@ header .arrow>a {
     header div.hello>span {
         line-height: 150px;
     }
+
+    header div.hello>span>h1 {
+        font-size: 60px;
+    }
+
+    header div.hello>span>h1:after {
+        content: "!";
+    }
+
+    header div.hello>span>h3 {
+        font-size: 25px;
+    }
+
+    header .arrow>a {
+        font-size: 80px;
+    }
 }
+
+/*end of header*/
