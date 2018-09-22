@@ -63,8 +63,8 @@ header nav {
 
 header nav>a {
     display: inline-block;
-    padding: 6px 10px 0;
-    margin: 4px 8px;
+    padding: 6px 5px 0;
+    margin: 4px 4px;
     text-decoration: none;
     font-size: 20px;
     text-transform: uppercase;
@@ -145,7 +145,7 @@ header .arrow>a:hover {
 
     header nav>a {
         padding: 8px 10px 0;
-        margin: 8px 6%;
+        margin: 8px 4%;
         font-size: 20px;
         font-size: 30px;
     }
@@ -187,7 +187,7 @@ header .arrow>a:hover {
 
     header nav>a {
         padding: 8px 10px 0;
-        margin: 8px 10%;
+        margin: 8px 7%;
         font-size: 20px;
         font-size: 30px;
     }
@@ -244,14 +244,21 @@ main {
 /*technologies section*/
 
 .technologies {
-    font-size: 60px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.technologies>wrapper {}
+
+.technologies>h2 {
+    font-family: 'Playfair Display', serif;
+    padding: 50px 0;
 }
 
 .technologies .element {
     display: inline-block;
-    text-align: center;
     padding-top: 30px;
-    width: 100vw;
+    width: 60%;
 }
 
 .technologies .element>i {
@@ -259,14 +266,55 @@ main {
     color: #e38016;
 }
 
-.technologies .element>p {
+.technologies .element>span>p {
     font-size: 40px;
     font-weight: 600;
 }
 
+.technologies .element>span>p.details {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+@media (min-width: 900px) {
+    .technologies .element {
+        display: inline-block;
+        padding-top: 30px;
+        width: 40%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .technologies .element {
+        display: inline-block;
+        padding-top: 30px;
+        width: 20%;
+    }
+
+    .technologies .element>span>p {
+        font-size: 35px;
+        font-weight: 600;
+    }
+
+    .technologies .element>span>p.details {
+        font-size: 20px;
+        font-weight: 400;
+    }
+}
+
+
 /*end of technologies section*/
 /*photo gallery section*/
-.flexGallery {}
+.flexGallery {
+    font-size: 40px;
+    height: 100vh;
+}
+
+.flexGallery>h2 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    padding: 50px 0;
+}
 
 /*end of photo gallery section*/
 
@@ -297,6 +345,10 @@ footer>div.footerContainer h4 {
 footer>div.footerContainer>.contact p {
     text-align: left;
     font-size: 18px;
+}
+
+footer>div.footerContainer>.socials h4 {
+    display: none;
 }
 
 footer>div.footerContainer>.socials .icons {
@@ -339,6 +391,10 @@ footer>div.copyright>p {
 
     footer>div.footerContainer>.socials .icons {
         text-align: right;
+    }
+
+    footer>div.footerContainer>.socials h4 {
+        display: block;
     }
 }
 
