@@ -38,15 +38,16 @@ a {
 header {
     width: 100vw;
     height: 100vh;
-    position: relative;
     background-image: url(img/bg.jpg);
     background-position: center center;
     background-attachment: fixed;
 }
 
-.darker {
+.layer {
     background-color: rgba(56, 48, 39, 0.5);
     height: 100%;
+    padding: 10%;
+    position: relative;
 }
 
 header nav {
@@ -118,7 +119,7 @@ header .arrow {
 header .arrow>a {
     display: inline-block;
     position: absolute;
-    bottom: 4%;
+    bottom: 5%;
     transform: translate(-50%);
 }
 
@@ -126,7 +127,7 @@ header .arrow>a {
 
 @media (min-width: 600px) and (orientation: portrait) {
 
-    .darker {}
+    .layer {}
 
     header div.hello {
         background-color: #242c28;
