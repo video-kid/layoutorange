@@ -121,6 +121,11 @@ header .arrow>a {
     font-size: 60px;
     bottom: 5%;
     transform: translate(-50%);
+    transition: 0.5s;
+}
+
+header .arrow>a:hover {
+    text-shadow: 0 8px 8px #080808;
 }
 
 /*header width 600+ and vertical*/
@@ -208,3 +213,25 @@ header .arrow>a {
 }
 
 /*end of header*/
+
+/*begining of mainpage*/
+
+main {
+    height: 100vh;
+}
+
+@media (min-width: 900px) {
+    main {
+        width: 90vw;
+        margin: 0 auto;
+        box-shadow: 0 7px 6px #080808;
+    }
+}
+
+@media (min-width: 1200px) {
+    main {
+        width: 80vw;
+    }
+}
+
+/*technologies section*/
