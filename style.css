@@ -112,11 +112,29 @@ header div.hello>span>h3 {
 header .arrow {
     width: 100%;
     bottom: 4%;
-    position: absolute;
-    text-align: center;
     font-size: 40px;
+    text-align: center;
 }
 
 header .arrow>a {
-    width: 40px;
+    display: inline-block;
+    position: absolute;
+    bottom: 4%;
+}
+
+/*header width 600+*/
+
+@media (min-width: 600px) {
+
+    .darker {}
+
+    header div.hello {
+        background-color: #242c28;
+        min-width: 250px;
+        min-height: 250px;
+    }
+
+    header div.hello>span {
+        line-height: 150px;
+    }
 }
