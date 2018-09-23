@@ -401,6 +401,7 @@ footer > div.footerContainer > .socials .icons {
 }
 
 footer > div.footerContainer > .socials .icons i {
+  cursor: pointer;
   padding: 5px;
   font-size: 40px;
   transition: 0.5s;
