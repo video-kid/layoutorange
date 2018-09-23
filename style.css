@@ -345,14 +345,14 @@ main {
 @media (min-width: 600px) {
   .flexGallery .flex {
     height: 150vh;
+  }
 }
 
 @media (min-width: 900px) {
-
   .flexGallery .flex {
-  flex-wrap: wrap;
-  flex-direction: row;
-  height: 100vh;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 100vh;
   }
   .flex div {
     flex-basis: 50%;
@@ -360,7 +360,6 @@ main {
   .flex .photo3 {
     flex-basis: 100%;
   }
-
 }
 /*end of photo gallery section*/
 
