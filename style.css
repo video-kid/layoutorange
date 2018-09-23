@@ -97,7 +97,7 @@ header div.hello:before {
 }
 
 header div.hello > span {
-  line-height: 100px;
+  line-height: 98px;
 }
 
 header div.hello > span > * {
@@ -154,7 +154,7 @@ header .arrow > a:hover {
   }
 
   header div.hello > span {
-    line-height: 190px;
+    line-height: 175px;
   }
 
   header div.hello > span > h1 {
@@ -195,11 +195,12 @@ header .arrow > a:hover {
     min-height: 250px;
   }
 
-  header div.hello > span {
-    line-height: 150px;
+  header div.hello > span > h3 {
+    line-height: 0px;
   }
 
   header div.hello > span > h1 {
+    line-height: 155px;
     font-size: 60px;
   }
 
@@ -319,7 +320,7 @@ main {
 footer {
   width: 100vw;
   background-color: #625f5d;
-  border-top: 2px dashed #242c28;
+  border-top: 2px solid #242c28;
   position: relative;
   padding-bottom: 30px;
 }
@@ -355,6 +356,7 @@ footer > div.footerContainer > .socials .icons {
 footer > div.footerContainer > .socials .icons i {
   padding: 5px;
   font-size: 40px;
+  transition: 0.5s;
 }
 
 footer > div.footerContainer > .socials .icons i:hover {
@@ -430,36 +432,37 @@ footer > div.copyright > p {
   }
 
   footer > div.copyright > p {
-      line-height: 50px;
-}
-
-@media (min-width: 1100px) {
-  footer > div.copyright > p {
-    line-height: 70px;
-    font-size: 20px;
+    line-height: 50px;
   }
 
-  footer > div.footerContainer .contact p {
-    font-size: 30px;
+  @media (min-width: 1100px) {
+    footer > div.copyright > p {
+      line-height: 70px;
+      font-size: 20px;
+    }
+
+    footer > div.footerContainer .contact p {
+      font-size: 30px;
+    }
+
+    footer > div.footerContainer h4 {
+      font-size: 45px;
+      margin-bottom: 15px;
+    }
+
+    footer > div.footerContainer {
+      padding-top: 6%;
+    }
   }
 
-  footer > div.footerContainer h4 {
-    font-size: 45px;
-    margin-bottom: 15px;
-  }
+  @media (min-width: 1400px) {
+    footer > div.footerContainer h4 {
+      font-size: 55px;
+      margin-bottom: 20px;
+    }
 
-  footer > div.footerContainer {
-    padding-top: 6%;
-  }
-}
-
-@media (min-width: 1400px) {
-  footer > div.footerContainer h4 {
-    font-size: 55px;
-    margin-bottom: 20px;
-  }
-
-  footer > div.footerContainer {
-    padding-top: 5%;
+    footer > div.footerContainer {
+      padding-top: 5%;
+    }
   }
 }
