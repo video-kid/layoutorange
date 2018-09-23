@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Dosis:400,600|Playfair+Display&subset=latin-ext');
+@import url("https://fonts.googleapis.com/css?family=Dosis:400,600|Playfair+Display&subset=latin-ext");
 /*
 fonts:
 font-family: 'Playfair Display', serif;
@@ -16,207 +16,204 @@ colors:
 */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    color: #dadada;
-    font-family: 'Dosis', sans-serif;
-    background-color: #242c28;
-    overflow-x: hidden;
+  color: #dadada;
+  font-family: "Dosis", sans-serif;
+  background-color: #242c28;
+  overflow-x: hidden;
 }
 
 a {
-    text-decoration: none;
-    color: #dadada;
+  text-decoration: none;
+  color: #dadada;
 }
 
-
 .clearfix:after {
-    content: "";
-    clear: both;
+  content: "";
+  clear: both;
 }
 
 /*end of globas*/
 /*header*/
 
 header {
-    width: 100vw;
-    height: 100vh;
-    background-image: url(img/bg.jpg);
-    background-position: center center;
-    background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(img/bg.jpg);
+  background-position: center center;
+  background-attachment: fixed;
 }
 
 .layer {
-    background-color: rgba(56, 48, 39, 0.5);
-    height: 100%;
-    padding: 5%;
-    position: relative;
+  background-color: rgba(56, 48, 39, 0.5);
+  height: 100%;
+  padding: 5%;
+  position: relative;
 }
 
 header nav {
-    text-align: center;
+  text-align: center;
 }
 
-header nav>a {
-    display: inline-block;
-    padding: 6px 5px 0;
-    margin: 4px 4px;
-    text-decoration: none;
-    font-size: 20px;
-    text-transform: uppercase;
-    transition: 0.5s;
+header nav > a {
+  display: inline-block;
+  padding: 6px 5px 0;
+  margin: 4px 4px;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  transition: 0.5s;
 }
 
-nav>a:hover {
-    border-bottom: 1px solid #cf6e0f;
+nav > a:hover {
+  border-bottom: 1px solid #cf6e0f;
 }
 
 header div.hello {
-    background-color: #242c28;
-    min-width: 170px;
-    min-height: 170px;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 0px 6px 1px #080808;
-
+  background-color: #242c28;
+  min-width: 170px;
+  min-height: 170px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0px 6px 1px #080808;
 }
 
 header div.hello:before {
-    content: "";
-    margin-left: 5%;
-    width: 90%;
-    /*height: 100%;*/
-    position: absolute;
-    border-bottom: 1px solid #cf6e0f;
-    bottom: 50%;
+  content: "";
+  margin-left: 5%;
+  width: 90%;
+  /*height: 100%;*/
+  position: absolute;
+  border-bottom: 1px solid #cf6e0f;
+  bottom: 50%;
 }
 
-header div.hello>span {
-    line-height: 100px;
+header div.hello > span {
+  line-height: 100px;
 }
 
-header div.hello>span>* {
-    text-align: center;
+header div.hello > span > * {
+  text-align: center;
 }
 
-header div.hello>span>h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 45px;
+header div.hello > span > h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
 }
 
-header div.hello>span>h3 {
-    line-height: 100%;
-    font-size: 18px;
-    font-weight: 200;
+header div.hello > span > h3 {
+  line-height: 100%;
+  font-size: 18px;
+  font-weight: 200;
 }
 
 header .arrow {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
-header .arrow>a {
-    display: inline-block;
-    position: absolute;
-    font-size: 60px;
-    bottom: 5%;
-    transform: translate(-50%);
-    transition: 0.5s;
+header .arrow > a {
+  display: inline-block;
+  position: absolute;
+  font-size: 60px;
+  bottom: 5%;
+  transform: translate(-50%);
+  transition: 0.5s;
 }
 
-header .arrow>a:hover {
-    text-shadow: 0 8px 8px #080808;
+header .arrow > a:hover {
+  text-shadow: 0 8px 8px #080808;
 }
 
 /*header width 600+ and vertical*/
 
 @media (min-width: 600px) and (orientation: portrait) {
+  .layer {
+    padding: 10%;
+  }
 
-    .layer {
-        padding: 10%;
-    }
+  header nav > a {
+    padding: 8px 10px 0;
+    margin: 8px 4%;
+    font-size: 20px;
+    font-size: 30px;
+  }
 
-    header nav>a {
-        padding: 8px 10px 0;
-        margin: 8px 4%;
-        font-size: 20px;
-        font-size: 30px;
-    }
+  header div.hello {
+    background-color: #242c28;
+    min-width: 300px;
+    min-height: 300px;
+  }
 
-    header div.hello {
-        background-color: #242c28;
-        min-width: 300px;
-        min-height: 300px;
-    }
+  header div.hello > span {
+    line-height: 190px;
+  }
 
-    header div.hello>span {
-        line-height: 190px;
-    }
+  header div.hello > span > h1 {
+    font-size: 60px;
+  }
 
-    header div.hello>span>h1 {
-        font-size: 60px;
-    }
+  header div.hello > span > h1:after {
+    content: "!";
+  }
 
-    header div.hello>span>h1:after {
-        content: "!";
-    }
+  header div.hello > span > h3 {
+    font-size: 30px;
+  }
 
-    header div.hello>span>h3 {
-        font-size: 30px;
-    }
-
-    header .arrow>a {
-        bottom: 10%;
-        font-size: 80px;
-    }
+  header .arrow > a {
+    bottom: 10%;
+    font-size: 80px;
+  }
 }
 
 /*hader width 900+ and horizontal*/
 
 @media (min-width: 900px) and (orientation: landscape) {
-    .layer {
-        padding: 5%;
-    }
+  .layer {
+    padding: 5%;
+  }
 
-    header nav>a {
-        padding: 8px 10px 0;
-        margin: 8px 7%;
-        font-size: 20px;
-        font-size: 30px;
-    }
+  header nav > a {
+    padding: 8px 10px 0;
+    margin: 8px 7%;
+    font-size: 20px;
+    font-size: 30px;
+  }
 
-    header div.hello {
-        background-color: #242c28;
-        min-width: 250px;
-        min-height: 250px;
-    }
+  header div.hello {
+    background-color: #242c28;
+    min-width: 250px;
+    min-height: 250px;
+  }
 
-    header div.hello>span {
-        line-height: 150px;
-    }
+  header div.hello > span {
+    line-height: 150px;
+  }
 
-    header div.hello>span>h1 {
-        font-size: 60px;
-    }
+  header div.hello > span > h1 {
+    font-size: 60px;
+  }
 
-    header div.hello>span>h1:after {
-        content: "!";
-    }
+  header div.hello > span > h1:after {
+    content: "!";
+  }
 
-    header div.hello>span>h3 {
-        font-size: 25px;
-    }
+  header div.hello > span > h3 {
+    font-size: 25px;
+  }
 
-    header .arrow>a {
-        font-size: 80px;
-    }
+  header .arrow > a {
+    font-size: 80px;
+  }
 }
 
 /*end of header*/
@@ -224,247 +221,245 @@ header .arrow>a:hover {
 /*begining of mainpage*/
 
 main {
-    width: 100vw;
+  width: 100vw;
 }
 
 @media (min-width: 900px) {
-    main {
-        width: 90vw;
-        margin: 0 auto;
-        box-shadow: 0 7px 6px #080808;
-    }
+  main {
+    width: 90vw;
+    margin: 0 auto;
+    box-shadow: 0 7px 6px #080808;
+  }
 }
 
 @media (min-width: 1200px) {
-    main {
-        width: 80vw;
-    }
+  main {
+    width: 80vw;
+  }
 }
 
 /*technologies section*/
 
 .technologies {
-    text-align: center;
-    font-size: 40px;
+  text-align: center;
+  font-size: 40px;
 }
 
-.technologies>wrapper {}
+.technologies > wrapper {
+}
 
-.technologies>h2 {
-    font-family: 'Playfair Display', serif;
-    padding: 50px 0;
+.technologies > h2 {
+  font-family: "Playfair Display", serif;
+  padding: 50px 0;
 }
 
 .technologies .element {
-    display: inline-block;
-    padding-top: 30px;
-    width: 60%;
+  display: inline-block;
+  padding-top: 30px;
+  width: 60%;
 }
 
-.technologies .element>i {
-    font-size: 200px;
-    color: #e38016;
+.technologies .element > i {
+  font-size: 200px;
+  color: #e38016;
 }
 
-.technologies .element>span>p {
-    font-size: 40px;
-    font-weight: 600;
+.technologies .element > span > p {
+  font-size: 40px;
+  font-weight: 600;
 }
 
-.technologies .element>span>p.details {
-    font-size: 30px;
-    font-weight: 400;
+.technologies .element > span > p.details {
+  font-size: 30px;
+  font-weight: 400;
 }
 
 @media (min-width: 900px) {
-    .technologies .element {
-        display: inline-block;
-        padding-top: 30px;
-        width: 40%;
-    }
+  .technologies .element {
+    display: inline-block;
+    padding-top: 30px;
+    width: 40%;
+  }
 }
 
 @media (min-width: 1280px) {
-    .technologies .element {
-        display: inline-block;
-        padding-top: 30px;
-        width: 20%;
-    }
+  .technologies .element {
+    display: inline-block;
+    padding-top: 30px;
+    width: 20%;
+  }
 
-    .technologies .element>span>p {
-        font-size: 35px;
-        font-weight: 600;
-    }
+  .technologies .element > span > p {
+    font-size: 35px;
+    font-weight: 600;
+  }
 
-    .technologies .element>span>p.details {
-        font-size: 20px;
-        font-weight: 400;
-    }
+  .technologies .element > span > p.details {
+    font-size: 20px;
+    font-weight: 400;
+  }
 }
-
 
 /*end of technologies section*/
 /*photo gallery section*/
 .flexGallery {
-    font-size: 40px;
-    height: 100vh;
+  font-size: 40px;
+  height: 100vh;
 }
 
-.flexGallery>h2 {
-    font-family: 'Playfair Display', serif;
-    text-align: center;
-    padding: 50px 0;
+.flexGallery > h2 {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  padding: 50px 0;
 }
 
 /*end of photo gallery section*/
 
 /*footer*/
 footer {
-    width: 100vw;
-    background-color: #625f5d;
-    border-top: 2px dashed #242c28;
-    position: relative;
-    padding-bottom: 30px;
+  width: 100vw;
+  background-color: #625f5d;
+  border-top: 2px dashed #242c28;
+  position: relative;
+  padding-bottom: 30px;
 }
 
-footer>div.footerContainer {
-    width: 90vw;
-    margin: 0 auto;
+footer > div.footerContainer {
+  width: 90vw;
+  margin: 0 auto;
 }
 
-footer>div.footerContainer * {
-    padding: 10px;
+footer > div.footerContainer * {
+  padding: 10px;
 }
 
-footer>div.footerContainer h4 {
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
-    border-bottom: 1px solid #cf6e0f;
+footer > div.footerContainer h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  border-bottom: 1px solid #cf6e0f;
 }
 
-footer>div.footerContainer>.contact p {
-    text-align: left;
-    font-size: 18px;
+footer > div.footerContainer > .contact p {
+  text-align: left;
+  font-size: 18px;
 }
 
-footer>div.footerContainer>.socials h4 {
-    display: none;
+footer > div.footerContainer > .socials h4 {
+  display: none;
 }
 
-footer>div.footerContainer>.socials .icons {
-    text-align: center;
+footer > div.footerContainer > .socials .icons {
+  text-align: center;
 }
 
-footer>div.footerContainer>.socials .icons i {
-    padding: 5px;
-    font-size: 40px;
+footer > div.footerContainer > .socials .icons i {
+  padding: 5px;
+  font-size: 40px;
 }
 
-footer>div.footerContainer>.socials .icons i:hover {
-    color: #e38016;
+footer > div.footerContainer > .socials .icons i:hover {
+  color: #e38016;
 }
 
-footer>div.copyright {
-    background-color: #e38016;
-    color: #080808;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
+footer > div.copyright {
+  background-color: #e38016;
+  color: #080808;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
-footer>div.copyright>p {
-    line-height: 30px;
-    text-align: center;
+footer > div.copyright > p {
+  line-height: 30px;
+  text-align: center;
 }
 
 @media (min-width: 600px) {
+  footer > div.footerContainer {
+    width: 80vw;
+    margin: 0 auto;
+  }
 
+  footer > div.footerContainer > .socials {
+    text-align: right;
+  }
 
-    footer>div.footerContainer {
-        width: 80vw;
-        margin: 0 auto;
-    }
+  footer > div.footerContainer > .socials .icons {
+    text-align: right;
+  }
 
-    footer>div.footerContainer>.socials {
-        text-align: right;
-    }
-
-    footer>div.footerContainer>.socials .icons {
-        text-align: right;
-    }
-
-    footer>div.footerContainer>.socials h4 {
-        display: block;
-    }
+  footer > div.footerContainer > .socials h4 {
+    display: block;
+  }
 }
 
 @media (min-width: 1000px) {
-    footer>div.footerContainer {
-        width: 90vw;
-        height: 50vh;
-        padding-left: 3vh;
-        padding-right: 3vh;
-        padding-top: 5%;
-    }
+  footer > div.footerContainer {
+    width: 90vw;
+    height: 500px;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    padding-top: 15%;
+  }
 
-    footer>div.footerContainer .contact {
-        width: 42vw;
-        text-align: left;
-        float: left;
-    }
+  footer > div.footerContainer .contact {
+    width: 42vw;
+    text-align: left;
+    float: left;
+  }
 
-    footer>div.footerContainer .socials {
-        width: 42vw;
-        float: right;
-    }
+  footer > div.footerContainer .socials {
+    width: 42vw;
+    float: right;
+  }
 
-    footer>div.footerContainer .contact p {
-        font-size: 25px;
-    }
+  footer > div.footerContainer .contact p {
+    font-size: 25px;
+  }
 
+  footer > div.footerContainer h4 {
+    font-size: 30px;
+  }
 
-    footer>div.footerContainer h4 {
-        font-size: 30px;
-    }
+  footer > div.footerContainer > .socials .icons {
+    text-align: right;
+  }
 
-    footer>div.footerContainer>.socials .icons {
-        text-align: right;
-    }
+  footer > div.footerContainer > .socials .icons i {
+    font-size: 60px;
+  }
 
-    footer>div.footerContainer>.socials .icons i {
-        font-size: 60px;
-    }
+  footer > div.copyright > p {
+      line-height: 50px;
 }
 
 @media (min-width: 1100px) {
+  footer > div.copyright > p {
+    line-height: 70px;
+    font-size: 20px;
+  }
 
-    footer>div.copyright>p {
-        line-height: 70px;
-        font-size: 20px;
-    }
+  footer > div.footerContainer .contact p {
+    font-size: 30px;
+  }
 
-    footer>div.footerContainer .contact p {
-        font-size: 30px;
-    }
+  footer > div.footerContainer h4 {
+    font-size: 45px;
+    margin-bottom: 15px;
+  }
 
-
-    footer>div.footerContainer h4 {
-        font-size: 45px;
-    }
-
-    footer>div.footerContainer {
-        padding-top: 1%;
-        padding-bottom: 45px;
-    }
+  footer > div.footerContainer {
+    padding-top: 6%;
+  }
 }
 
 @media (min-width: 1400px) {
-    footer>div.footerContainer h4 {
-        font-size: 55px;
-        margin-bottom: 10px;
-    }
+  footer > div.footerContainer h4 {
+    font-size: 55px;
+    margin-bottom: 20px;
+  }
 
-    footer>div.footerContainer {
-        padding-top: 5%;
-    }
+  footer > div.footerContainer {
+    padding-top: 5%;
+  }
 }
