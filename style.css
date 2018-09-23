@@ -271,7 +271,7 @@ main {
 }
 
 .technologies .element > span > p.details {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 400;
 }
 
@@ -305,15 +305,63 @@ main {
 /*photo gallery section*/
 .flexGallery {
   font-size: 40px;
-  height: 100vh;
 }
 
-.flexGallery > h2 {
+.flexGallery h2 {
   font-family: "Playfair Display", serif;
   text-align: center;
   padding: 50px 0;
 }
 
+.flexGallery .flex {
+  display: flex;
+  height: 300vh;
+  flex-direction: column;
+}
+
+.flex div {
+  flex-basis: 100%;
+  background-size: cover;
+  background-position: center center;
+  filter: grayscale(100%);
+}
+
+.flex div:hover {
+  filter: grayscale(0%);
+}
+
+.flex .photo1 {
+  background-image: url("img/1.jpg");
+}
+
+.flex .photo2 {
+  background-image: url("img/2.jpg");
+}
+
+.flex .photo3 {
+  background-image: url("img/4.jpg");
+}
+
+@media (min-width: 600px) {
+  .flexGallery .flex {
+    height: 150vh;
+}
+
+@media (min-width: 900px) {
+
+  .flexGallery .flex {
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 100vh;
+  }
+  .flex div {
+    flex-basis: 50%;
+  }
+  .flex .photo3 {
+    flex-basis: 100%;
+  }
+
+}
 /*end of photo gallery section*/
 
 /*footer*/
